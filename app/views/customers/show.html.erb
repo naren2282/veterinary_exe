@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pet name:</strong>
+  <%= @customer.Pet_name %>
+</p>
+
+<p>
+  <strong>Date of next appointment:</strong>
+  <%= @customer.Date_of_next_appointment %>
+</p>
+
+<p>
+  <strong>Reason of visit:</strong>
+  <%= @customer.reason_of_visit %>
+</p>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>
